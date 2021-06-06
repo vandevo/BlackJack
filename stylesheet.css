@@ -1,6 +1,17 @@
-
-
 h1 {
-    color: rosybrown;
+    color: lightcoral;
 
+}
+
+body {
+    background-image: url("/img/cardgame-01.jpeg");
+    background-size: cover;
+    background-color: black;
+
+
+  }
+.container {
+    padding: 50px 25px 25px 25px;
+    text-align: center;
+    background-color: wheat;
 }
