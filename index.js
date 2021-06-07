@@ -4,10 +4,10 @@ let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 let message = ""
-let startGame = document.getElementById("clickStart")
+
 let messageEl = document.getElementById("message-el")
 
-function startGame (){
+function startGame(){
 if (sum <= 20) {
     message = "Do you want to draw a new card? 🙂"
 } else if (sum === 21) {
@@ -17,10 +17,8 @@ if (sum <= 20) {
     message = "You're out of the game! 😭"
     isAlive = false
 }
-
+messageEl.textContent = message
 
 }
 
-function messageEl {
-    messageEl.textContent = message
-}
+
