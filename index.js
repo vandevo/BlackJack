@@ -28,6 +28,16 @@ if (sum <= 20) {
 }
 messageEl.textContent = message
 
+
+
 }
 
 
+
+function newCard() {
+    message = "Drawing a new card from the deck!"
+    let card = 7
+    sum += card
+    startGame()
+
+}
