@@ -17,6 +17,11 @@ let sumEl = document.querySelector("#sum-el")
 
 let cardsEl = document.querySelector("#cards-el")
 
+
+function getRandomCards(){
+    return 5
+}
+
 function startGame() {
     renderGame()
 }
@@ -48,7 +53,7 @@ messageEl.textContent = message
 
 function newCard() {
     message = "Drawing a new card from the deck!"
-    let card = 7
+    let card = getRandomCards()
     sum += card
     cards.push(card)
 
