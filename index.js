@@ -19,8 +19,13 @@ let cardsEl = document.querySelector("#cards-el")
 
 
 function getRandomCards(){
-    let randomNumber = Math.floor(Math.random() * 13) + 1
-    return randomNumber
+    let randomNumer = Math.floor(Math.random() * 13) + 1
+    if (randomNumer > 10) {
+        return 10
+    } else if (randomNumer === 1){
+        return 11
+    } else {
+    return randomNumer}
 }
 
 function startGame() {
