@@ -5,6 +5,7 @@ let sum = 0
 
 let hasBlackJack = false
 let isAlive = false
+
 let message = ""
 
 let messageEl = document.getElementById("message-el")
@@ -58,13 +59,20 @@ messageEl.textContent = message
 }
 
 
-
 function newCard() {
+    if (isAlive === true && hasBlackJack === false){
     message = "Drawing a new card from the deck!"
     let card = getRandomCards()
     sum += card
     cards.push(card)
 
-    renderGame()
-
+    renderGame()}
 }
+
+let player = {
+    name: "Van",
+    chips: 145
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
