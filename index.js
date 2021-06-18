@@ -70,9 +70,10 @@ function newCard() {
 }
 
 let player = {
-    name: "Van",
+    name: "Your Credits",
     chips: 145
 }
 
 let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips
+playerEl.textContent = player.name + ": €" + player.chips
+
